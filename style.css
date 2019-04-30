@@ -1,66 +1,88 @@
-body {
-    font-family: 'Courier New', Courier, monospace;
-}
 
-nav ol {
-    list-style: none;
+*{
+    margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
+}
+
+.menu {
     width: 100%;
-    text-decoration: none;
+    height: 100%;
+    background-color: #222;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-nav ol a {
-    display: inline-block;
-    padding: 10px;
-    width: 50%;
-    text-decoration: none;
+.menu ul {
+    list-style: none;
+    position: relative;
 }
 
-nav a {
+.menu ul li {
+    width: 150px;
+    float: left;
+}
+
+.menu a {
+    padding: 15px;
+    display: block;
     text-decoration: none;
-    font-weight: 700;
-    font-size: 18px;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+}
+
+.menu ul li a:hover {
+     background-color: #f4f4f4;
+     color: #555;
+}
+
+
+
+@media (max-width: 900px){
     
 
+    .menu ul li {
+        width: 100%;
+        float: none;
+    }
+    
 }
 
-header {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+header h1 {
+    display: block;
+    width: 100px;
+    height: 60px;
+    padding: 18px;
     text-align: center;
 }
 
-h1 h2 {
+header p {
     margin: 0;
-    font-weight: 700;
+    width: 85%;
 }
 
- .menu {
-text-decoration: none;
-list-style: none;
-padding: 0;
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 100%;
-
+#contato {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-.menu li {
+#contato h2,
+#contato p {
     width: 100%;
-    text-align: center;
 }
 
-.menu li a {
-    padding:0px;
-    margin:0px;
-    background-color:#EDEDED;
-    list-style:none;
-    display: inline;
+footer {
+    background-color: grey;
+    color: #f1f1f1; 
+}
+
+.final {
+    background-color: #555;
+    color: aliceblue;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
 }
