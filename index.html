@@ -64,12 +64,11 @@
     <script>
         var noticias = '';
         for (i = 0; i < db.dados.length; i++) {
-            noticias += `<a href="noticia.html"><p class="noticias-item">Notícia: ${db.dados[i].titulo} <img src=" ${db.dados[i].imagem}"</p></a> <br>`;
-            }
+           noticias += `<a href="noticia.html"><p class="noticias-item"> Notícia: ${db.dados[i].titulo} <img src="${ db.dados[i].imagem}"></p></a>`
+        }
         document.getElementById('noticias').innerHTML = noticias;
         
-        
-    </script>
+        </script>
 
 </body>
 
