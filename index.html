@@ -2,73 +2,186 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style.css">
 
-    <img src="imagem/TN.jpg" alt="" style="width:100; height:50px;" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="dbfake.js"></script>
 
-    <title>TheNews</title>
-
-    <nav class="menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="noticia2.html">Notícias</a></li>
-            <li><a href="noticia.html">Entretenimento</a></li>
-            <li><a href="noticia.html">Esportes</a></li>
-            <li><a href="noticia.html">Economia</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-
-
+    <title>BLOG</title>
 
 </head>
 
 <body>
-    <header>
-        <div>
-            <h1>
-                <b><font size="5" face=verdana color=black>TheNews</font></b>
-            </h1>
 
-        </div>
+    <header id="cabecalho">
+        <img src="blog.png" alt="" class="logo">
+        <ul>
+            <a href="">
+                <li>HOME</li>
+            </a>
+            <a href="">
+                <li>POSTAGENS</li>
+            </a>
+            <a href="">
+                <li>QUEM SOMOS</li>
+            </a>
+            <a href="">
+                <li>CONTATO</li>
+            </a>
+        </ul>
     </header>
 
+    <div id="post1">
+        <h1>ÚLTIMOS POSTS</h1>
+    </div>
 
-    <main>
-        <h2>Aqui voce encontra as príncipais notícias do Brasil e do Mundo!!!</h2>
-        <div id="noticias">
+    <div id="post2">
 
+        <img src="post.jpg" alt="post"><br>
+        Título: Post de Márcio Lucas<br>
+        Data: 15/06/2019<br>
+        
+
+        <div>
+            <a href="#" class="like-counter">Like</a><span class="click-text"><a id="clicks"></span>
         </div>
-    </main>
+        
+        <div id="emptyDiv"></div>
+        <br>
+        <input id="username" type="text" placeholder="Seu Nome" class="boxes">
+        <br>
+
+        <textarea id="comment" placeholder="Comente Aqui" class="boxes"></textarea>
+        <br>
+        <button type="button" id="btn" onclick="post()">Enviar</button>
+    </div>
+
+    <div id="post2">
+
+        <img src="post.jpg" alt="post"><br>
+        Título: Post de Márcio Lucas<br>
+        Data: 15/06/2019<br>
+        
+
+        <div>
+            <a href="#" class="like-counter">Like</a><span class="click-text"><a id="clicks"></span>
+        </div>
+
+        <div id="emptyDiv"></div>
+        <br>
+        <input id="username" type="text" placeholder="Seu Nome" class="boxes">
+        <br>
+
+        <textarea id="comment" placeholder="Comente Aqui" class="boxes"></textarea>
+        <br>
+        <button type="button" id="btn" onclick="post()">Enviar</button>
+    </div>
+
+    <div id="post2">
+
+        <img src="post.jpg" alt="post"><br>
+        Título: Post de Márcio Lucas<br>
+        Data: 15/06/2019<br>
+        
+
+        <div>
+            <a href="#" class="like-counter">Like</a><span class="click-text"><a id="clicks"></span>
+        </div>
+
+        <div id="emptyDiv"></div>
+        <br>
+        <input id="username" type="text" placeholder="Seu Nome" class="boxes">
+        <br>
+
+        <textarea id="comment" placeholder="Comente Aqui" class="boxes"></textarea>
+        <br>
+        <button type="button" id="btn" onclick="post()">Enviar</button>
+    </div>
+
+    <div id="post2">
+
+        <img src="post.jpg" alt="post"><br>
+        Título: Post de Márcio Lucas<br>
+        Data: 15/06/2019<br>
+        
+
+        <div>
+            <a href="#" class="like-counter">Like</a><span class="click-text"><a id="clicks"></span>
+        </div>
+
+        <div id="emptyDiv"></div>
+        <br>
+        <input id="username" type="text" placeholder="Seu Nome" class="boxes">
+        <br>
+
+        <textarea id="comment" placeholder="Comente Aqui" class="boxes"></textarea>
+        <br>
+        <button type="button" id="btn" onclick="post()">Enviar</button>
+    </div>
+
+    <div id="post2">
+        <img src="post.jpg" alt="post"><br>
+        Título: Post de Márcio Lucas<br>
+        Data: 15/06/2019<br>
+        
+
+        <div>
+            <a href="#" class="like-counter">Like</a><span class="click-text"><a id="clicks"></span>
+        </div>
+
+        <div id="emptyDiv"></div>
+        <br>
+        <input id="username" type="text" placeholder="Seu Nome" class="boxes">
+        <br>
+
+        <textarea id="comment" placeholder="Comente Aqui" class="boxes"></textarea>
+        <br>
+        <button type="button" id="btn" onclick="post()">Enviar</button>
+    </div>
+
+
+    <div id="conteudo">
+
+        <h2>Clique aqui para escolher a foto</h2>
+        <input id="files" name="file" type="file"></input>
+
+        <div id="arquivo">
+            <br><br>
+        </div>
+
+        <div>
+            <a href="#" class="like-counter">Like</a><span class="click-text"><a id="clicks"></span>
+        </div>
+
+        <div id="logo2">
+            <div id="emptyDiv"></div>
+            <br>
+            <input id="username" type="text" placeholder="Seu Nome" class="boxes">
+            <br>
+
+            <textarea id="comment" placeholder="Comente Aqui" class="boxes"></textarea>
+            <br>
+            <button type="button" id="btn" onclick="post()">Enviar</button>
+        </div>
+    </div>
+
+
 
     <footer>
-        <section id="contato">
-            <h2>CONTATO</h2>
-            <p>Entre em contato conosco.</p>
-            <div>
-                <img src="imagem/contato.png" alt="tel" style="width:80; height:35px;">
-                <p><a href="37991603013">(37) 99160-3013</a></p>
-            </div>
-            <div>
-                <img src="imagem/email.png" alt="email" style="width:90; height:45px;">
-                <p><a href="marciolucasmachado22@gmail.com">marciolucasmachado22@gmail.com</a></p>
-            </div>
-           
+        Copyright &#x24B8; 2019<br>
+        All Rights Reserved<br>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-whatsapp"></a>
     </footer>
-    </section>
 
-    <script>
-        var noticias = '';
-        for (i = 0; i < db.dados.length; i++) {
-           noticias += `<a href="noticia.html"><p class="noticias-item"> Notícia: ${db.dados[i].titulo} <img src="${ db.dados[i].imagem}"></p></a>`
-        }
-        document.getElementById('noticias').innerHTML = noticias;
-        
-        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="comentario.js"> </script>
+    <script src="like.js"> </script>
+    <script src="script.js"></script>
+
 
 </body>
 
